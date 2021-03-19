@@ -1,0 +1,22 @@
+
+/* 내프로필 */
+.friends{ width:100%; display: flex; flex-direction:column; justify-content:space-between; }
+.friends a{text-decoration: none; color:#333;}
+h6.title{border-top: 1px solid #eee; border-bottom: 1px solid #eee; color: #bbb; margin: 0; padding: 10px; letter-spacing:1px; }
+.section_row{display: flex; align-items: center; padding:10px 15px;}
+.section_row span{font-size: 10px; padding: 10px; background: #f0f0f0; border-radius: 5px; color:#939393;}
+.section_row img {width: 40px;border-radius: 50%;margin-right: 15px;/*animation: 1s rotateFriend infinite ease-in-out;*/}
+.section_row a{text-decoration: none; font-size: 14px; font-weight: bold;}
+.section_fri{ justify-content: space-between;}
+.s_column{display: flex; align-items: center;}
+/* tab-bar */
+.tab-bar{width:100%; background-color: #f7f7f7; position: fixed; bottom: 0; display: flex; justify-content: space-between; border-top: 1px solid #c1c1c1; padding:10px; box-sizing: border-box;}
+.tab-bar_tab{ display: flex; flex-direction:column; align-items: center; color: #c1c1c1; transition: all .3s linear; font-size: 18px; text-decoration: none; padding-left: 20px; padding-right: 20px;}
+
+/* 클릭하면 바뀌게해주기. */
+.tab-bar_tab:hover{ transform: scale(1.1);}
+.tab-bar_tab_on{display: flex; flex-direction:column; align-items: center; color: #523737; transition: all .3s linear; font-size: 18px; text-decoration: none; padding-left: 20px; padding-right: 20px;}
+.tab-bar_title{font-size: 10px;}
+.tab-bar_tab>i{ margin-bottom: 3px; font-size: 20px;}
+
+

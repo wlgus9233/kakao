@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import {HashRouter, Route} from 'react-router-dom';
+import Friend from './routes/Friend';
+import Chats from './routes/Chats';
+import Find from './routes/Find';
+import More from './routes/More';
+import Talk from './routes/Talk';
+import Profile from './routes/Profile';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <Route path="/" exact={true} component={Friend} />
+      <Route path="/chats" component={Chats} />
+      <Route path="/find" component={Find} />
+      <Route path="/more" component={More} />
+      <Route path="/talk" component={Talk} />
+      <Route path="/Profile" component={Profile} />
+    </HashRouter>
   );
 }
-
-export default App;

@@ -1,0 +1,24 @@
+/* 헤더 */
+.header{z-index: 2; position: fixed; top: 0; left: 0; width: 100%; height:65px;  color: #fff;}
+.header_top{padding: 5px 10px 10px 10px; font-size: 12px;}
+.header_top,.header_bottom{display: flex; flex-direction:row; flex-wrap:wrap; justify-content: space-between; }
+.header_top.header_icon{width: 33%;} 
+.header_bottom{width: 95%; margin: 0 10px;  text-align: center; font-size: 14px; margin: 0 auto;}
+.header_icon>a>i{color: #fff;}
+
+/* 프로필 사진 */
+.profile{width: 100%; height:740px;}
+.profile_header {height: 340px; width: 100%;position: relative; top:0px;
+  display: flex;flex-direction: column;justify-content: flex-end;align-items: center;}
+.profile_container img{width: 90px; height: 90px; border-radius: 50%; }
+.profile_header .profile_container {text-align: center; position: relative; bottom:-110px;}
+.profile_container .profile_title{ margin: 0; padding: 0; font-weight: normal; font-size: 16px;}
+
+/* 프로필이메일 */
+.profile_text{margin-top: 110px; display: flex; flex-direction: column; align-items: center;}
+.profile_text input{padding: 5px;margin-bottom: 20px; text-align: center;}
+.profile_actions{display: flex;}
+.profile_action{display: flex; flex-direction: column; align-items: center; margin-right: 15px; cursor: pointer;}
+.profile_circle{background: #f2f2f2; padding: 15px; border-radius: 50%; color: #523737;margin-bottom: 15px;}
+.profile_title2{font-size: 12px; font-weight: bold;}
+
